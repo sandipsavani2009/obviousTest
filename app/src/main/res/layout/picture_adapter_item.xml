@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="170dp"
+        android:layout_height="220dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        android:layout_margin="5dp">
+
+    <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/picture_adapter_imgView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/loading"
+                android:scaleType="fitXY"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@android:color/black"
+                android:alpha="0.8"
+                android:gravity="center_vertical"
+                android:padding="5dp">
+
+            <TextView
+                    android:id="@+id/picture_adapter_title_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"/>
+
+            <TextView
+                    android:id="@+id/picture_adapter_date_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:layout_below="@id/picture_adapter_title_textView"
+                    android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>
